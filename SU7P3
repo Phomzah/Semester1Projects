@@ -1,0 +1,13 @@
+import math as m
+P =print
+
+base = float(input("Enter a base: "))
+exp = float(input("Enter an exponent: "))
+
+if exp <= -1:
+    P("Error - exponent cannot be negative")
+elif base == 0 and exp == 0:
+    P("Error - indefinite for (0^0)")
+else:
+    P(pow(base, exp))
+
